@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ibrahim Odat — AI Security Researcher · LLM-Enabled Autonomous Systems</title>
+<meta name="description" content="Ibrahim Odat — AI Security Researcher specializing in LLM-powered multi-agent UAV systems, adversarial ML, and autonomous drone security. Oakland University PhD researcher." />
+<meta name="author" content="Ibrahim Odat" />
+<meta name="theme-color" content="#0b1020" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ibrahim Odat — AI Security Researcher" />
+<meta property="og:description" content="Securing LLM-driven autonomous UAV systems. 40+ citations. IEEE/ACM SEC 2023. RAID 2026 under review." />
+<meta property="og:image" content="assets/img/lab-3.jpeg" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- Animated gradient / particles background -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark">IO</span>
+    <span class="brand-text">Ibrahim&nbsp;Odat</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#gallery">Lab</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow"><span class="pulse"></span>Oakland University · PhD Researcher · AI Security Lab</p>
+    <h1 class="title">
+      <span class="line">Securing the control plane of</span>
+      <span class="line gradient-text">LLM-driven autonomous systems.</span>
+    </h1>
+    <p class="lede">
+      I'm <strong>Ibrahim Odat</strong> — an AI security researcher breaking and defending the next generation of
+      large-language-model–powered multi-agent UAV fleets. My work bridges adversarial machine learning,
+      autonomous robotics, and offensive security to harden the systems that will soon fly, drive, and defend.
+    </p>
+
+    <div class="hero-ctas">
+      <a class="btn primary" href="#research">Explore Research
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a class="btn ghost" href="https://github.com/OdatSec" target="_blank" rel="noopener">GitHub · @OdatSec</a>
+      <a class="btn ghost" href="https://scholar.google.com/citations?user=U5HR4EcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+
+    <!-- live stats row -->
+    <div class="stats" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-num" data-count="40">0</div>
+        <div class="stat-lab">Citations</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-num" data-count="2">0</div>
+        <div class="stat-lab">Peer-reviewed papers</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-num" data-count="1">0</div>
+        <div class="stat-lab">RAID 2026 under review</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-num" data-count="4" data-suffix=".0">0</div>
+        <div class="stat-lab">GPA · M.S. Cybersecurity</div>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-label="Scroll down">
+    <span></span>
+  </a>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-head">
+    <span class="tag">01 · About</span>
+    <h2>Researcher. Red-teamer. Builder.</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>
+        I'm a <strong>PhD researcher at Oakland University</strong> advised by Dr.&nbsp;Anyi&nbsp;Liu, working at the
+        intersection of <em>adversarial machine learning</em> and <em>autonomous systems security</em>. My current
+        work identifies <strong>memory as a novel control-plane attack surface</strong> in LLM-based multi-agent
+        UAV systems — introducing the first documented threat model in this space and a defense pipeline that
+        drops measured attack success from <strong>100% to 0%</strong> in controlled evaluation.
+      </p>
+      <p>
+        Before the PhD, I earned an <strong>M.S. in Cybersecurity (GPA 4.0/4.0)</strong> and contributed to
+        <em>Net-GPT</em> — one of the first peer-reviewed demonstrations of LLM-enabled attacks against UAV
+        communications (IEEE/ACM SEC 2023). The paper is now cited by independent researchers across
+        10+ countries and has been extended to smart-grid, robotic, and flying-network domains.
+      </p>
+      <p>
+        I also build. From <a href="https://github.com/OdatSec/AeroMind" target="_blank" rel="noopener">AeroMind</a>,
+        the multi-agent UAV testbed underpinning my RAID&nbsp;2026 submission, to penetration-testing frameworks
+        for PX4 Autopilot — I ship research artifacts the community can actually run.
+      </p>
+
+      <div class="chips">
+        <span class="chip">LLM Security</span>
+        <span class="chip">Memory Poisoning</span>
+        <span class="chip">Multi-Agent UAV</span>
+        <span class="chip">PX4 · MAVLink</span>
+        <span class="chip">Adversarial ML</span>
+        <span class="chip">LangGraph</span>
+        <span class="chip">Red Team</span>
+        <span class="chip">CEH · eJPT</span>
+      </div>
+    </div>
+
+    <aside class="about-card">
+      <div class="card-header">
+        <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+        <span class="card-title">whoami</span>
+      </div>
+      <pre class="terminal"><code><span class="t-prompt">ibrahim@oakland</span>:<span class="t-path">~</span>$ cat profile.yml
+<span class="t-key">role</span>:     PhD Researcher, AI Security
+<span class="t-key">lab</span>:      Oakland University · Dr. Anyi Liu
+<span class="t-key">focus</span>:    LLM-driven autonomous systems
+<span class="t-key">papers</span>:   IEEE/ACM SEC '23 · IEEE MOST '23
+<span class="t-key">review</span>:   RAID 2026 · ICMLA 2026 (planned)
+<span class="t-key">stack</span>:    [Python, PX4, LangGraph, MAVSDK,
+           Ollama, FastAPI, Docker]
+<span class="t-key">certs</span>:    [CEH, eJPT, NSE 1/2]
+<span class="t-key">status</span>:   <span class="t-ok">open to collaboration</span>
+<span class="t-prompt">ibrahim@oakland</span>:<span class="t-path">~</span>$ <span class="t-cursor">▍</span>
+</code></pre>
+    </aside>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="section">
+  <div class="section-head">
+    <span class="tag">02 · Research</span>
+    <h2>Three threads. One thesis.</h2>
+    <p class="section-sub">
+      My program connects attacks on LLM agents, defenses for autonomous robotics, and reproducible artifacts
+      for the research community.
+    </p>
+  </div>
+
+  <div class="cards">
+    <article class="card tilt">
+      <div class="card-glow"></div>
+      <div class="card-ix">01</div>
+      <h3>Memory-Poisoning Attacks on LLM Agents</h3>
+      <p>
+        Persistent vector memory is the new privilege boundary. I show how a single poisoned reflection
+        can redirect a multi-agent UAV mission — and persist across sessions.
+      </p>
+      <ul class="card-meta">
+        <li>15 attack scenarios · 3 LLM backbones</li>
+        <li>First documented threat model in this area</li>
+        <li><strong>RAID 2026</strong> — under review</li>
+      </ul>
+    </article>
+
+    <article class="card tilt">
+      <div class="card-glow"></div>
+      <div class="card-ix">02</div>
+      <h3>LLM-Enabled Attacks on UAV Comms</h3>
+      <p>
+        Net-GPT demonstrated that fine-tuned language models can forge MAVLink traffic with 95.3% accuracy —
+        enabling automated MITM on drone ↔ ground-station links.
+      </p>
+      <ul class="card-meta">
+        <li>40 citations · 26 in 2025 alone</li>
+        <li>10+ survey papers cite as foundational</li>
+        <li>Extended to smart grid, IoT, robotics</li>
+      </ul>
+    </article>
+
+    <article class="card tilt">
+      <div class="card-glow"></div>
+      <div class="card-ix">03</div>
+      <h3>Hardening Autonomous Stacks</h3>
+      <p>
+        PX4 Autopilot pen-testing, MAVLink session hijacking, and a three-layer defense pipeline —
+        turned into reproducible testbeds the community can build on.
+      </p>
+      <ul class="card-meta">
+        <li>Buffer overflow &amp; session hijack PoCs</li>
+        <li>80% resilience gain in lab evaluation</li>
+        <li>Defense: 100% → 0% ASR</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section">
+  <div class="section-head">
+    <span class="tag">03 · Publications</span>
+    <h2>Peer-reviewed work &amp; manuscripts.</h2>
+  </div>
+
+  <ol class="pubs">
+    <li class="pub">
+      <div class="pub-year">Apr<br/>2026</div>
+      <div class="pub-body">
+        <div class="pub-status review">Under Review · RAID 2026</div>
+        <h3>AeroMind: Poisoning the Control Plane of LLM-Driven UAV Agents</h3>
+        <p class="pub-authors"><strong>Ibrahim Odat</strong>, Anyi Liu — Oakland University</p>
+        <p class="pub-venue">29th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2026) · Submission #452 · Springer LNCS</p>
+        <div class="pub-links">
+          <a href="https://github.com/OdatSec/AeroMind" target="_blank" rel="noopener">Artifact ↗</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="pub-year">Dec<br/>2023</div>
+      <div class="pub-body">
+        <div class="pub-status published">Published · IEEE/ACM SEC 2023</div>
+        <h3>Net-GPT: A LLM-Empowered Man-in-the-Middle Chatbot for Unmanned Aerial Vehicle</h3>
+        <p class="pub-authors">B. Piggott, S. Patil, G. Feng, <strong>Ibrahim Odat</strong>, R. Mukherjee, B. Dharmalingam, A. Liu</p>
+        <p class="pub-venue">IEEE/ACM Symposium on Edge Computing, Wilmington, DE · pp. 287–293</p>
+        <div class="pub-stats">
+          <span><strong>40</strong> citations</span>
+          <span><strong>95.3%</strong> attack accuracy (Llama-2-13B)</span>
+          <span><strong>47×</strong> speedup (Distil-GPT-2)</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1145/3583740.3626809" target="_blank" rel="noopener">DOI ↗</a>
+          <a href="https://github.com/OdatSec/Net-GPT" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="pub-year">2023</div>
+      <div class="pub-body">
+        <div class="pub-status published">Published · IEEE MOST 2023</div>
+        <h3>Heterogeneous Generative Dataset for UASes</h3>
+        <p class="pub-authors">B. Dharmalingam, <strong>Ibrahim Odat</strong>, R. Mukherjee, B. Piggott, A. Liu</p>
+        <p class="pub-venue">IEEE Conference on Mobility: Operations, Services &amp; Technologies · pp. 229–230</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1109/MOST57249.2023.00034" target="_blank" rel="noopener">DOI ↗</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="pub-year">May<br/>2026</div>
+      <div class="pub-body">
+        <div class="pub-status planned">Planned Submission · ICMLA 2026</div>
+        <h3>Extension paper — Adversarial ML on LLM-Driven UAV Agents</h3>
+        <p class="pub-authors"><strong>Ibrahim Odat</strong>, Anyi Liu — Oakland University</p>
+        <p class="pub-venue">25th IEEE International Conference on Machine Learning and Applications · Oakland University · Oct 5–7, 2026</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-head">
+    <span class="tag">04 · Open-source</span>
+    <h2>Artifacts the community can run.</h2>
+  </div>
+
+  <div class="projects">
+    <a class="project tilt" href="https://github.com/OdatSec/AeroMind" target="_blank" rel="noopener">
+      <div class="project-ribbon">RAID 2026</div>
+      <h3>AeroMind<span class="arrow">→</span></h3>
+      <p>Multi-agent UAV security testbed. Supervisor agent + autonomous scouts + persistent vector memory for evaluating memory poisoning, cross-agent propagation, and retrieval-stage defenses.</p>
+      <div class="tech">
+        <span>LangGraph</span><span>PX4 SITL</span><span>FastAPI</span><span>Python</span>
+      </div>
+    </a>
+
+    <a class="project tilt" href="https://github.com/OdatSec/Net-GPT" target="_blank" rel="noopener">
+      <div class="project-ribbon cited">40 citations</div>
+      <h3>Net-GPT<span class="arrow">→</span></h3>
+      <p>Reference implementation for the IEEE/ACM SEC 2023 paper. Fine-tuned LLM pipeline for generating counterfeit MAVLink traffic — the public codebase independent researchers have extended to new domains.</p>
+      <div class="tech">
+        <span>Llama-2</span><span>Distil-GPT-2</span><span>MAVLink</span><span>Python</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- GALLERY / LAB -->
+<section id="gallery" class="section">
+  <div class="section-head">
+    <span class="tag">05 · In the lab</span>
+    <h2>Where the research actually happens.</h2>
+    <p class="section-sub">
+      Oakland University · Engineering Center. Hands-on work with PX4 flight controllers, multi-rotor testbeds,
+      and the AeroMind multi-agent fleet.
+    </p>
+  </div>
+
+  <div class="gallery">
+    <figure class="gal-item" data-img="assets/img/lab-1.jpeg">
+      <img src="assets/img/lab-1.jpeg" alt="Ibrahim Odat performing hands-on work on a multi-rotor UAV in the Oakland University engineering lab" loading="lazy"/>
+      <figcaption>PX4 airframe configuration · hands-on testbed assembly</figcaption>
+    </figure>
+    <figure class="gal-item" data-img="assets/img/lab-2.jpeg">
+      <img src="assets/img/lab-2.jpeg" alt="Ibrahim running a flight-controller test with a laptop next to the UAV" loading="lazy"/>
+      <figcaption>Flight-controller bring-up · MAVLink telemetry validation</figcaption>
+    </figure>
+    <figure class="gal-item" data-img="assets/img/lab-3.jpeg">
+      <img src="assets/img/lab-3.jpeg" alt="Ibrahim Odat standing next to multi-rotor UAVs at Oakland University" loading="lazy"/>
+      <figcaption>AeroMind multi-drone fleet · Oakland University</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-head">
+    <span class="tag">06 · Toolkit</span>
+    <h2>What I reach for.</h2>
+  </div>
+
+  <div class="skills">
+    <div class="skill-col">
+      <h4>AI / LLM Security</h4>
+      <ul>
+        <li>Adversarial ML &amp; prompt-injection</li>
+        <li>LLM fine-tuning (QLoRA)</li>
+        <li>RAG &amp; memory poisoning</li>
+        <li>LangGraph · LangChain · Ollama</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Autonomous Systems</h4>
+      <ul>
+        <li>PX4 Autopilot · MAVLink · MAVSDK</li>
+        <li>ROS 2 · Gazebo SITL</li>
+        <li>NVIDIA Jetson · YOLOv8</li>
+        <li>Multi-drone coordination</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Offensive Security</h4>
+      <ul>
+        <li>Penetration testing &amp; exploit dev</li>
+        <li>Firmware &amp; reverse engineering</li>
+        <li>Kali · Metasploit · Burp · Nessus</li>
+        <li>MITRE ATT&amp;CK · OWASP · NIST</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Programming</h4>
+      <ul>
+        <li>Python · Bash · C/C++ · SQL</li>
+        <li>FastAPI · Flask</li>
+        <li>Docker · AWS</li>
+        <li>Git · CI workflows</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-head center">
+    <span class="tag">07 · Contact</span>
+    <h2>Let's build safer autonomous systems.</h2>
+    <p class="section-sub">
+      Open to research collaborations, industry partnerships, and invited talks on LLM &amp; UAV security.
+    </p>
+  </div>
+
+  <div class="contact-grid">
+    <a class="c-card" href="mailto:ibrahimodatt@gmail.com">
+      <span class="c-label">Email</span>
+      <span class="c-value">ibrahimodatt@gmail.com</span>
+    </a>
+    <a class="c-card" href="mailto:ibrahimodat@oakland.edu">
+      <span class="c-label">Academic</span>
+      <span class="c-value">ibrahimodat@oakland.edu</span>
+    </a>
+    <a class="c-card" href="https://github.com/OdatSec" target="_blank" rel="noopener">
+      <span class="c-label">GitHub</span>
+      <span class="c-value">@OdatSec</span>
+    </a>
+    <a class="c-card" href="https://linkedin.com/in/ibrahim-odat" target="_blank" rel="noopener">
+      <span class="c-label">LinkedIn</span>
+      <span class="c-value">ibrahim-odat</span>
+    </a>
+    <a class="c-card" href="https://scholar.google.com/citations?user=U5HR4EcAAAAJ&hl=en" target="_blank" rel="noopener">
+      <span class="c-label">Google Scholar</span>
+      <span class="c-value">U5HR4EcAAAAJ</span>
+    </a>
+    <a class="c-card" href="https://orcid.org/0009-0009-3175-0473" target="_blank" rel="noopener">
+      <span class="c-label">ORCID</span>
+      <span class="c-value">0009-0009-3175-0473</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>© <span id="yr"></span> Ibrahim Odat · Oakland University</span>
+    <span class="dim">Built with obsessive attention to detail.</span>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" aria-hidden="true">
+  <button id="lb-close" aria-label="Close">×</button>
+  <img id="lb-img" alt="" />
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
