@@ -168,6 +168,33 @@ navLinks.querySelectorAll('a').forEach(a =>
   });
 })();
 
+// ----------- Hero portrait parallax tilt -----------
+(() => {
+  const el = document.getElementById('portraitTilt');
+  if (!el) return;
+  const max = 10; // degrees
+  let raf = null;
+  const onMove = (e) => {
+    const rect = el.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    const rx = (0.5 - y) * max;
+    const ry = (x - 0.5) * max;
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
+    });
+  };
+  const reset = () => {
+    cancelAnimationFrame(raf);
+    el.style.transform = '';
+  };
+  // Bind to the hero section so the tilt works even when hovering the badges/caption area
+  const hero = document.querySelector('.hero-portrait');
+  hero.addEventListener('mousemove', onMove);
+  hero.addEventListener('mouseleave', reset);
+})();
+
 // ----------- Lightbox gallery -----------
 (() => {
   const lb = document.getElementById('lightbox');
