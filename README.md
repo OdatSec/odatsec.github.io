@@ -2,7 +2,7 @@
 
 Personal site of **Ibrahim Odat**, PhD candidate in AI security at Oakland University.
 
-Live: https://3odat.github.io
+Live: https://odatsec.github.io
 
 ## Stack
 

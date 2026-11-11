@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://3odat.github.io/sitemap.xml
+Sitemap: https://odatsec.github.io/sitemap.xml
