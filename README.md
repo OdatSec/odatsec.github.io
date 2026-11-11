@@ -1,49 +1,38 @@
-# odatsec.github.io
+# Ibrahim Odat · research site
 
-Personal website of **Ibrahim Odat** — AI Security Researcher, Oakland University.
+Personal site of **Ibrahim Odat**, PhD candidate in AI security at Oakland University.
 
-🌐 Live: [https://odatsec.github.io](https://odatsec.github.io)
-
-## About
-
-Single-page portfolio covering current research on the security of LLM-driven
-autonomous UAV systems, peer-reviewed publications, open-source artifacts
-(AeroMind, Net-GPT), and lab work at Oakland University.
+Live: https://3odat.github.io
 
 ## Stack
 
-- Static HTML / CSS / vanilla JS (no build step)
-- Interactive particle network background
-- Responsive design · dark-mode first
-- Accessible: semantic HTML, reduced-motion support, keyboard-navigable lightbox
-
-## Structure
+Plain HTML, CSS, and a small vanilla JS file. No build step, no dependencies, no third-party requests.
+Fonts (Newsreader, Inter, JetBrains Mono, all SIL Open Font License) are self-hosted in `assets/fonts/`.
+Light and dark themes follow the system setting, with a manual toggle.
 
 ```
-.
-├── index.html
-├── assets/
-│   ├── style.css
-│   ├── script.js
-│   └── img/
-│       ├── lab-1.jpeg
-│       ├── lab-2.jpeg
-│       └── lab-3.jpeg
-└── README.md
+index.html            all content
+assets/style.css      design tokens, layout, components
+assets/script.js      theme toggle, nav, Fig. 1, BibTeX copy, lightbox
+assets/img/           photos (WebP with JPEG fallback) and og.jpg
+assets/fonts/         self-hosted variable fonts
+assets/Ibrahim_Odat_CV.pdf
 ```
+
+## Updating
+
+Everything lives in `index.html`. Search for `UPDATE:` to find the spots that change most often.
+
+- **New paper**: copy one `<li class="pub">` block in the Publications section, paste it at the top of the
+  list, and edit the fields. The status tag is `review`, `preprint`, or `conf`.
+- **News**: add an `<li>` at the top of the `news` list.
+- **Citation numbers**: the `metrics` block in the hero, and the "Cited by" spans in Publications.
+- **CV**: replace `assets/Ibrahim_Odat_CV.pdf`, keeping the file name.
 
 ## Local preview
 
 ```bash
-# any static server; e.g.
-python -m http.server 8000
-# then open http://localhost:8000
+python3 -m http.server 8000
 ```
 
-## Contact
-
-- Email: ibrahimodatt@gmail.com
-- Academic: ibrahimodat@oakland.edu
-- GitHub: [@OdatSec](https://github.com/OdatSec)
-- Scholar: [U5HR4EcAAAAJ](https://scholar.google.com/citations?user=U5HR4EcAAAAJ&hl=en)
-- ORCID: [0009-0009-3175-0473](https://orcid.org/0009-0009-3175-0473)
+Then open http://localhost:8000.
