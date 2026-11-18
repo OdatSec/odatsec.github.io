@@ -2,11 +2,13 @@
 
 Personal site of **Ibrahim Odat**, PhD candidate in AI security at Oakland University.
 
-Live: https://odatsec.github.io
+Live: https://3odat.github.io
 
 ## Stack
 
-Plain HTML, CSS, and a small vanilla JS file. No build step, no dependencies, no third-party requests.
+Plain HTML, CSS, and a small vanilla JS file. No build step and no dependencies. The only third-party
+request is the GoatCounter visit counter (no cookies), loaded at the end of `index.html` and `cv.html`.
+The statistics are at https://3odat.goatcounter.com.
 Fonts (Newsreader, Inter, JetBrains Mono, all SIL Open Font License) are self-hosted in `assets/fonts/`.
 Light and dark themes follow the system setting, with a manual toggle.
 
@@ -35,6 +37,29 @@ After any change to `assets/style.css` or `assets/script.js`, raise the `?v=` nu
   to replace `assets/Ibrahim_Odat_CV.pdf`. Keep the file name.
 - **Figures**: Fig. 1 text lives at the top of the Fig. 1 block in `assets/script.js`. The Fig. 2 scenarios
   are `data-*` attributes on the buttons in `index.html`. Fig. 3 and Fig. 4 are plain markup.
+
+## Look
+
+Dark by default, with a light mode behind the sun and moon button. Three palettes are defined as tokens at the top
+of `assets/style.css`: `volt` (default), `ultra`, and `sonar`. Open the site with `?design` to try them and
+switch dark or light. The hero animation is a small canvas simulation in `assets/script.js` that follows the
+cursor on desktop and reacts to taps on phones.
+
+## Tracking where visitors come from
+
+Share a tagged link in each place and GoatCounter groups the visits by source:
+
+```
+https://3odat.github.io/?ref=instagram
+https://3odat.github.io/?ref=linkedin
+https://3odat.github.io/?ref=cv
+```
+
+Some apps break the `?` in a link. For those, use the short addresses, which redirect to the tagged link:
+`/ig` (Instagram), `/li` (LinkedIn), `/wa` (WhatsApp), `/fb` (Facebook), `/x` (X), `/sc` (Snapchat),
+`/tt` (TikTok), `/tg` (Telegram), `/yt` (YouTube), `/em` (email), `/c` (printed on the CV). To add one,
+copy the `ig` folder, change the name in its `index.html`, and add it to the list in `404.html`, which
+also repairs a broken `ref=` link.
 
 ## Local preview
 
